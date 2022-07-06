@@ -25,8 +25,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- fullpage CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"
+    integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="default.css">
   <link rel="stylesheet" href="index.css">
 </head>
 
@@ -35,7 +38,7 @@
     <header class="header">
       <div class="container">
         <h1>
-          <a href="#"><img src="./images/brand_logo.png" alt="브랜드 로고"></a>
+          <a href="./index.html"><img src="./images/brand_logo.png" alt="브랜드 로고"></a>
         </h1>
         <nav class="nav">
           <ul>
@@ -118,81 +121,90 @@
         </nav>
       </div>
     </header>
-    <section class="section section01" id="section01">
-      <div class="container">
-        <div class="img-box">
-          <a href="#">
-            <img src="./images/section01.jpeg" alt="메인이미지">
-            <img src="./images/main-text.png" alt="STUDIO TOMBOY">
-          </a>
+    <div id="fullpage">
+      <section class="section section01" id="section01">
+        <div class="container">
+          <div class="img-box">
+            <a href="#">
+              <img src="./images/main-text.png" alt="STUDIO TOMBOY">
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="section section02" id="section02">
-      <div class="container">
-        <!-- <a href="http://v.kr.kollus.com/sr?jwt=eyJhbGciOiAiSFMyNTYiLCJ0eXAiOiAiSldUIn0.eyJleHB0IjogMTg5MzQyMzYwMCwibWMiOiBbeyJtY2tleSI6ICJacmp1czZ4ZSJ9XX0.T_A3uY6wAfyTxPe-m5We1Fhdhrq8m37GdA4h05F8P-Q&amp;custom_key=54e2283ee0a81f7a46131254ea5fed615b0393878ca355f702c47ae875e4a8e2&amp;download"
-          target="_blank"></a> -->
-        <video controls autoplay muted name="media">
-          <source
-            src="http://v.kr.kollus.com/sr?jwt=eyJhbGciOiAiSFMyNTYiLCJ0eXAiOiAiSldUIn0.eyJleHB0IjogMTg5MzQyMzYwMCwibWMiOiBbeyJtY2tleSI6ICJacmp1czZ4ZSJ9XX0.T_A3uY6wAfyTxPe-m5We1Fhdhrq8m37GdA4h05F8P-Q&amp;custom_key=54e2283ee0a81f7a46131254ea5fed615b0393878ca355f702c47ae875e4a8e2&amp;download"
-            type="video/mp4">
-        </video>
-      </div>
-    </section>
-    <section class="section section03 section-video" id="section03">
-      <div class="container">
-        <div class="img-box">
-          <a href="#">
-            <img src="./images/section03.jpeg" alt="섹션3이미지">
-            <img src="./images/men-text.png" alt="men 텍스트">
-          </a>
+      </section>
+      <section class="section section02" id="section02">
+        <div class="container">
+          <!-- <a href="http://v.kr.kollus.com/sr?jwt=eyJhbGciOiAiSFMyNTYiLCJ0eXAiOiAiSldUIn0.eyJleHB0IjogMTg5MzQyMzYwMCwibWMiOiBbeyJtY2tleSI6ICJacmp1czZ4ZSJ9XX0.T_A3uY6wAfyTxPe-m5We1Fhdhrq8m37GdA4h05F8P-Q&amp;custom_key=54e2283ee0a81f7a46131254ea5fed615b0393878ca355f702c47ae875e4a8e2&amp;download"
+            target="_blank"></a> -->
+          <video controls autoplay muted name="media">
+            <source
+              src="http://v.kr.kollus.com/sr?jwt=eyJhbGciOiAiSFMyNTYiLCJ0eXAiOiAiSldUIn0.eyJleHB0IjogMTg5MzQyMzYwMCwibWMiOiBbeyJtY2tleSI6ICJacmp1czZ4ZSJ9XX0.T_A3uY6wAfyTxPe-m5We1Fhdhrq8m37GdA4h05F8P-Q&amp;custom_key=54e2283ee0a81f7a46131254ea5fed615b0393878ca355f702c47ae875e4a8e2&amp;download"
+              type="video/mp4">
+          </video>
         </div>
-      </div>
-    </section>
-    <section class="section section04" id="section04">
-      <div class="container">
-        <div class="img-box">
-          <a href="#">
-            <img src="./images/section04.jpeg" alt="atelier 이미지">
-            <img src="./images/atelier-text.png" alt="atelier 텍스트">
-          </a>
+      </section>
+      <section class="section section03 section-video" id="section03">
+        <div class="container">
+          <div class="img-box">
+            <a href="#">
+              <img src="./images/men-text.png" alt="men 텍스트">
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="section section05 section-video" id="section05">
-      <div class="container">
-        <!-- <a href="http://v.kr.kollus.com/sr?jwt=eyJhbGciOiAiSFMyNTYiLCJ0eXAiOiAiSldUIn0.eyJleHB0IjogMTg5MzQyMzYwMCwibWMiOiBbeyJtY2tleSI6ICJacmp1czZ4ZSJ9XX0.T_A3uY6wAfyTxPe-m5We1Fhdhrq8m37GdA4h05F8P-Q&amp;custom_key=54e2283ee0a81f7a46131254ea5fed615b0393878ca355f702c47ae875e4a8e2&amp;download"
-          target="_blank"></a> -->
-        <video controls autoplay muted name="media">
-          <source
-            src="http://v.kr.kollus.com/sr?jwt=eyJhbGciOiAiSFMyNTYiLCJ0eXAiOiAiSldUIn0.eyJleHB0IjogMTg5MzQyMzYwMCwibWMiOiBbeyJtY2tleSI6ICJacmp1czZ4ZSJ9XX0.T_A3uY6wAfyTxPe-m5We1Fhdhrq8m37GdA4h05F8P-Q&amp;custom_key=54e2283ee0a81f7a46131254ea5fed615b0393878ca355f702c47ae875e4a8e2&amp;download"
-            type="video/mp4">
-        </video>
-      </div>
-    </section>
-    <section class="section section06" id="section06">
-      <div class="container">
-        <div class="img-box">
-          <a href="#">
-            <img src="./images/section06.jpeg" alt="kim-dami 이미지">
+      </section>
+      <section class="section section04" id="section04">
+        <div class="container">
+          <div class="img-box">
+            <a href="#">
+              <img src="./images/atelier-text.png" alt="atelier 텍스트">
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section section05 section-video" id="section05">
+        <div class="container">
+          <!-- <a href="http://v.kr.kollus.com/sr?jwt=eyJhbGciOiAiSFMyNTYiLCJ0eXAiOiAiSldUIn0.eyJleHB0IjogMTg5MzQyMzYwMCwibWMiOiBbeyJtY2tleSI6ICJacmp1czZ4ZSJ9XX0.T_A3uY6wAfyTxPe-m5We1Fhdhrq8m37GdA4h05F8P-Q&amp;custom_key=54e2283ee0a81f7a46131254ea5fed615b0393878ca355f702c47ae875e4a8e2&amp;download"
+            target="_blank"></a> -->
+          <video controls autoplay muted name="media">
+            <source
+              src="http://v.kr.kollus.com/sr?jwt=eyJhbGciOiAiSFMyNTYiLCJ0eXAiOiAiSldUIn0.eyJleHB0IjogMTg5MzQyMzYwMCwibWMiOiBbeyJtY2tleSI6ICJacmp1czZ4ZSJ9XX0.T_A3uY6wAfyTxPe-m5We1Fhdhrq8m37GdA4h05F8P-Q&amp;custom_key=54e2283ee0a81f7a46131254ea5fed615b0393878ca355f702c47ae875e4a8e2&amp;download"
+              type="video/mp4">
+          </video>
+        </div>
+      </section>
+      <section class="section section06" id="section06">
+        <div class="container">
+          <div class="img-box">
             <img src="./images/kimdami-text.png" alt="kim-dami 텍스트">
-          </a>
+          </div>
         </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="sns">
-          <ul>
-            <li><a href="#">INSTAGRAM</a></li>
-            <li><a href="#">FACEBOOK</a></li>
-            <li><a href="#">YOUTUBE</a></li>
-          </ul>
+      </section>
+      <footer class="section footer">
+        <div class="container">
+          <div class="sns">
+            <ul>
+              <li><a href="#">INSTAGRAM</a></li>
+              <li><a href="#">FACEBOOK</a></li>
+              <li><a href="#">YOUTUBE</a></li>
+            </ul>
+          </div>
+          <p>COPYRIGHT © STUDIO TOMBOY. All RIGHTS RESERVED.</p>
         </div>
-        <p>COPYRIGHT © STUDIO TOMBOY. All RIGHTS RESERVED.</p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </div>
+  <script>
+    new fullpage('#fullpage', {
+      scrollingSpeed: 1300,
+      navigation: true,
+      scrollBar: false,
+      // responsiveWidth: 700,
+      // anchors: ['home', 'about-us', 'contact'],
+      // parallax: true,
+      // onLeave: function (origin, destination, direction) {
+      //   console.log("Leaving section" + origin.index);
+      // },
+    });
+  </script>
 </body>
 
 </html>

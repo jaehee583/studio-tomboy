@@ -12,7 +12,7 @@ html {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
   font-size: 12px;
-  color: #333;
+  color: #222;
   line-height: 1.5em;
 }
 .wrap{
@@ -31,7 +31,7 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255,255,255,0.35);
+  background-color: rgba(255,255,255,0.45);
   z-index: 100;
 }
 .header .container{
@@ -48,6 +48,9 @@ html {
   display: flex;
   flex-flow: row nowrap;
 }
+.nav>li{
+  position: relative;
+}
 .nav li, .r-nav>li{
   margin-right: 30px;
 }
@@ -55,9 +58,11 @@ html {
 .r-nav>li:last-child{
   margin-right: 0;
 }
+
 .sub-nav{
   display: none;
 }
+
 
 /* Section */
 .section{

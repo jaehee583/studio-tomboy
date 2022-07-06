@@ -48,11 +48,14 @@ html {
   display: flex;
   flex-flow: row nowrap;
 }
-.nav>li{
+.nav>ul>li{
   position: relative;
 }
 .nav li, .r-nav>li{
   margin-right: 30px;
+}
+.nav li a{
+  padding: 30px 0;
 }
 .nav li:last-child,
 .r-nav>li:last-child{
@@ -61,6 +64,34 @@ html {
 
 .sub-nav{
   display: none;
+  padding: 20px 10px;
+  width: 150px;
+  height: auto;
+  position: absolute;
+  top: 44px;
+  left: -25px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #222;
+}
+.sub-nav li{
+  margin-left: 10px;
+  margin-top: 15px;
+  text-align: left;
+}
+.sub-nav li:first-child{
+  margin-top: 0;
+}
+.sub-nav li a{
+  width: 150px;
+}
+.sub-nav.active{
+  display: block;
+}
+.lang{
+  position: relative;
+}
+.lang .sub-nav{
+  width: 80px;
 }
 
 
